@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utils.br</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="assets/icons/style.css" />
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a href="#" class="logo title">Utils.<span>br</span></a>
+
+        <!-- menu -->
+        <div class="menu">
+          <ul>
+            <li class="active"><a href="#">Início</a></li>
+            <li>
+              <a href="#about">Sobre</a>
+            </li>
+            <li>
+              <a href="#day-informations">Dia</a>
+            </li>
+            <li>
+              <a href="#binary">Tradutor de Binário</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /menu-->
+
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <section class="section" id="home">
+        <div class="content">
+          <h1 class="logo">Utils.<span>br</span></h1>
+          <article class="text">
+            <p>
+              A iniciativa
+              <span class="logo">utils.<span>br</span></span> trata-se de um
+              projeto pessoal
+            </p>
+          </article>
+          <a
+            href="https://api.whatsapp.com/send?phone=5581998289933&text=Gostaria%20de%20saber%20mais%20sobre%20a%20Utils.br!"
+            target="_blank"
+            class="button"
+          >
+            <i class="icon-whatsapp"></i> Obter mais informações</a
+          >
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="content">
+          <h1 class="title">Do que se trata?</h1>
+          <div class="cards">
+            <div class="card">
+              <h2 class="title">Útil</h2>
+              <p>
+                Assim como o próprio nome diz, o projeto visa atender
+                necessidades básica dentro da internet para mostrar o poder do
+                Javascript e as habilidades do desenvolvedor. Com
+                funcionalidades básicas e úteis, a praticidade é o objetivo
+                deste website.
+              </p>
+            </div>
+            <div class="card">
+              <h2 class="title">Objetivo</h2>
+              <p>
+                Por se tratar de um projeto pessoal, mostrar as habilidades de
+                frontend e backend do desenvolvedor e o poder das linguagens web
+                é o principal objetivo da Utils.br, as funcionalidades,
+                normalmente aprendidas em cursos básicos de programação, são a
+                essência do website.
+              </p>
+            </div>
+            <div class="card">
+              <h2 class="title">O criador</h2>
+              <p>
+                Olá! Me chamo Breno Soares e sou o criador do Utils.br, obrigado
+                por participar do projeto e por favor dêem seus feedbacks. Gosto
+                de ajudar as pessoas mesmo fornecendo um básico útil pois todos
+                temos que começar de algum lugar. Caso queira, envie-me um
+                e-mail: brenosoares4303@gmail.com.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clock -->
+      <section class="section" id="day-informations">
+        <div class="content">
+          <div class="clock">
+            <h1 class="title">Que horas são?</h2>
+  
+            <div class="clock-element">
+              <h1 class="clock-text"></h1>
+              <p class="fuse-text"></p>
+              <small class="gmt-text"></small>
+            </div>
+          </div>
+          <div class="date">
+            <h1 class="title">Que dia é hoje?</h1>
+            <div class="date-element">
+              <h1 class="date-text"></h1>
+              <p class="week-day-text"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Date -->
+    </main>
+
+    <script src="main.js"></script>
+    <script src="scripts/dayinformation.js"></script>
+  </body>
+</html>
