@@ -35,7 +35,6 @@ body {
 }
 
 a {
-  color: white;
   text-decoration: none;
 
   transition: 0.2s;
@@ -133,6 +132,8 @@ nav .menu ul {
 nav .menu ul li a {
   padding: 0.5rem;
   transition: 0.2s;
+
+  color: white;
 }
 
 .toggle {
@@ -286,6 +287,53 @@ main {
 .section#day-informations .clock-text,
 .section#day-informations .date-text {
   font-size: 2.5rem;
+}
+
+/* ================================ COVID ================================== */
+.section#covid {
+  background-color: white;
+
+  color: var(--primary-color);
+
+  text-align: center;
+
+  padding: 4rem 0;
+}
+
+.section#covid .title {
+  font-size: 2rem;
+}
+
+.informations {
+  margin-top: 2rem;
+
+  display: grid;
+
+  gap: 2rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.cases p,
+.confirmed-cases p,
+.deaths p {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.credits {
+  color: var(--primary-color);
+
+  padding: 0.5rem;
+
+  border: 1px solid var(--primary-color);
+}
+
+.credits a {
+  color: blue;
+  text-decoration: underline;
 }
 
 /* ================================ DAY MEDIAQUERIES ================================== */
