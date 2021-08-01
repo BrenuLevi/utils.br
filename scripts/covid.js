@@ -24,7 +24,5 @@ request.onload = function () {
   console.log(time)
   document.querySelector('.covid-date-time').innerHTML =
     'Dados atualizados em: ' +
-    new Date(date[0], date[1] - 1, date[2]).toLocaleDateString() +
-    ' às ' +
-    time
+    new Date(date[0], date[1] - 1, date[2]).toLocaleDateString()
 }
