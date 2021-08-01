@@ -307,7 +307,9 @@ main {
 .informations {
   margin-top: 2rem;
 
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   gap: 2rem;
 }
@@ -326,14 +328,27 @@ main {
 .credits {
   color: var(--primary-color);
 
-  padding: 0.5rem;
+  padding: 0.75rem;
 
-  border: 1px solid var(--primary-color);
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+
+  border: 3px solid var(--primary-color);
 }
 
-.credits a {
-  color: blue;
-  text-decoration: underline;
+.credits .button {
+  background-color: var(--primary-color);
+
+  color: white;
+}
+
+.credits .button:hover {
+  background-color: var(--nav-color);
 }
 
 /* ================================ DAY MEDIAQUERIES ================================== */
