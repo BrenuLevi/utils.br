@@ -351,6 +351,44 @@ main {
   background-color: var(--nav-color);
 }
 
+/* ================================ FOOTER ================================== */
+footer {
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+footer h1.logo {
+  font-size: 3rem;
+}
+
+.top {
+  margin-bottom: 2rem;
+}
+
+.top p span {
+  font-size: 1rem;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+}
+
+.bottom a {
+  color: var(--secondary-color);
+}
+
+.bottom a:hover {
+  color: #04d8fd;
+}
+
 /* ================================ DAY MEDIAQUERIES ================================== */
 @media (min-width: 1200px) {
   /* reusable classes */
@@ -459,5 +497,21 @@ main {
 
   .section#day-informations small {
     font-size: 1rem;
+  }
+
+  footer {
+    justify-content: flex-start;
+  }
+
+  footer div.content {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .top {
+    margin-bottom: 0;
   }
 }

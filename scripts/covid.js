@@ -12,8 +12,6 @@ request.send()
 request.onload = function () {
   let { response } = request
 
-  console.log(response)
-
   document.querySelector('.cases p').innerHTML = response.data.cases
   document.querySelector('.confirmed-cases p').innerHTML =
     response.data.confirmed
@@ -21,7 +19,6 @@ request.onload = function () {
 
   let date = response.data.updated_at.substr(0, 10).split('-')
   let time = response.data.updated_at.substr(11, 8)
-  console.log(time)
   document.querySelector('.covid-date-time').innerHTML =
     'Dados atualizados em: ' +
     new Date(date[0], date[1] - 1, date[2]).toLocaleDateString()
