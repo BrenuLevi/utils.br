@@ -12,10 +12,16 @@ request.send()
 request.onload = function () {
   let { response } = request
 
-  document.querySelector('.cases p').innerHTML = response.data.cases
+  let numberFormatter = new Intl.NumberFormat('pt-br')
+
+  document.querySelector('.cases p').innerHTML = numberFormatter.format(
+    response.data.cases
+  )
   document.querySelector('.confirmed-cases p').innerHTML =
-    response.data.confirmed
-  document.querySelector('.deaths p').innerHTML = response.data.deaths
+    numberFormatter.format(response.data.confirmed)
+  document.querySelector('.deaths p').innerHTML = numberFormatter.format(
+    response.data.deaths
+  )
 
   let date = response.data.updated_at.substr(0, 10).split('-')
   let time = response.data.updated_at.substr(11, 8)
